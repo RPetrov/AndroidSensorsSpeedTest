@@ -21,7 +21,7 @@ import java.util.List;
 public class MainActivity extends ActionBarActivity {
 
     private SensorManager mSensorManager;
-    private static final int MAX_COUNT = 100;
+    private static final int MAX_COUNT = 1000;
 
 
     @Override
@@ -94,8 +94,10 @@ public class MainActivity extends ActionBarActivity {
                             sensCount++;
                             if(listSensor.size() > sensCount){
                                 sensor = listSensor.get(sensCount);
-                                mSensorManager.registerListener(this, listSensor.get(sensCount), SensorManager.SENSOR_DELAY_FASTEST);
                                 count = 0;
+                                startTime = System.currentTimeMillis();
+                                mSensorManager.registerListener(this, listSensor.get(sensCount), SensorManager.SENSOR_DELAY_FASTEST);
+
                             } else {
                                 findViewById(R.id.progress_bar).setVisibility(View.GONE);
                             }
