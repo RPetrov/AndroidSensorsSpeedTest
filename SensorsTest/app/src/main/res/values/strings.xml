@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Sensors Speed Test</string>
+
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="accelerometer">accelerometer sensor</string>
+    <string name="ambient_temperature">ambient temperature sensor</string>
+    <string name="gravity">gravity sensor</string>
+    <string name="gyroscope">gyroscope sensor</string>
+    <string name="light">light sensor</string>
+    <string name="linear_acceleration">linear acceleration sensor</string>
+    <string name="magnetic_field">magnetic field sensor</string>
+    <string name="orientation">orientation sensor (deprecated)</string>
+    <string name="pressure">pressure sensor</string>
+    <string name="proximity">proximity sensor</string>
+    <string name="relative_humidity">relative humidity sensor</string>
+    <string name="rotation_vector">rotation vector sensor</string>
+    <string name="temperature">temperature sensor (deprecated)</string>
+    <string name="unknown">unknown sensor</string>
+</resources>
